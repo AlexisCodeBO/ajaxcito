@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+
+	<script type="text/javascript">
+		
+		/*var n=prompt("Introduzca un numero");
+		var c=0;
+		for (var i = 1; i <n; i++) {
+			if(n%i==0){
+				c+=i;
+			}
+
+		}
+		console.log("valor c "+c+" valor n "+n);
+		if(n==c){
+				alert("Es perfecto");
+		}
+		else{
+			alert("No es perfecto");
+		}
+
+		var n=prompt("Introduzca el numero de elementos fibonaci");
+		var m=fibonacci(n);
+
+		for ( i = 0; i < n; i++) {
+        	document.write (fibonacci(i)+" ");
+    	}
+		
+		
+
+		function fibonacci(n)
+		{
+		    if (n>1){
+		       return fibonacci(n-1) + fibonacci(n-2);  //función recursiva
+		    }
+		    else if (n==1) {  // caso base
+		        return 1;
+		    }
+		    else if (n==0){  // caso base
+		        return 0;
+		    }
+		    else{ //error
+		        System.out.println("Debes ingresar un tamaño mayor o igual a 1");
+		        return -1; 
+		    }
+		}*/
+
+		var a=prompt("Introduzca a");
+		var b=prompt("Introduzca b");
+		var c=prompt("Introduzca c");
+		var x=0,y=0,z=0;
+		var x1=0,x2=0;
+		x=b*b-4*a*c;
+		if(x<0){
+			alert("La Ecuacion No Tiene Soluciones Reales");
+
+		}
+		if(x==0){
+			alert("La ecuacion tiene solo una raiz Real");
+			x1 = (-b)/(2*a);
+			console.log ("La Solucion es, X1=X2 :"  +x1);
+		}
+		if(x>0){
+			alert("La ecuacion tiene dos raizes reales");
+			x1 = (-b)+Math.sqrt(x)/(2*a);
+			x2 = (-b)-Math.sqrt(x)/(2*a);
+			console.log("La Solucion es, X1 = " +x1+ " y, X2 = " +x2);
+		}
+		
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<h1>Solo Admite Letras</h1>
+	<script language="javascript">
+		function sololetras(){
+		if (event.keyCode >45 && event.keyCode  <57) event.returnValue = false;
+		}
+	</script>
+<input type="text" name="textfield2" id="textfield2" onKeypress="sololetras()" maxlength="30" />
+</body>
+</html>

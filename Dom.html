@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Dom</title>
+</head>
+<body>
+	<input id="n1" type="text" name="" onkeypress="return valida(event)">
+	<input id="n2" type="text" name="" onkeypress="return valida(event)">
+	<button onclick="resultado()">Sumar</button>
+	<div id="m"></div>
+	<script type="text/javascript">
+
+		function valida(e){
+		    tecla = (document.all) ? e.keyCode : e.which;
+
+		    //Tecla de retroceso para borrar, siempre la permite
+		    if (tecla==8){
+		        return true;
+		    }
+		        
+		    // Patron de entrada, en este caso solo acepta numeros
+		    patron =/[0-9]/;
+		    tecla_final = String.fromCharCode(tecla);
+		    return patron.test(tecla_final);
+		}
+
+		function resultado(){
+			var nu1= parseInt( document.getElementById("n1").value);
+			var nu2=parseInt( document.getElementById("n2").value);
+			var s=nu1+nu2;
+			document.getElementById("m").textContent=s;
+			var n =document.getElementById("n1");
+		}
+		
+	</script>
+</body>
+</html>
